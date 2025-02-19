@@ -1,6 +1,6 @@
-package com.study.shop.repository;
+package com.study.shop.notice;
 
-import com.study.shop.entity.Notice;
+import com.study.shop.notice.Notice;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

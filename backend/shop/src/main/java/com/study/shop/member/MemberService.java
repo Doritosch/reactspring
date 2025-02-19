@@ -1,7 +1,5 @@
-package com.study.shop.service;
+package com.study.shop.member;
 
-import com.study.shop.entity.Member;
-import com.study.shop.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

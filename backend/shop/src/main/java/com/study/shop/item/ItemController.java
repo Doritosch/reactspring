@@ -1,7 +1,5 @@
-package com.study.shop.controller;
+package com.study.shop.item;
 
-import com.study.shop.entity.Item;
-import com.study.shop.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

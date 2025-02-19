@@ -1,9 +1,9 @@
-package com.study.shop.service;
+package com.study.shop.item;
 
-import com.study.shop.entity.Item;
+import com.study.shop.item.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.study.shop.repository.ItemRepository;
+import com.study.shop.item.ItemRepository;
 import java.util.List;
 
 @Service

@@ -1,6 +1,5 @@
-package com.study.shop.repository;
+package com.study.shop.item;
 
-import com.study.shop.entity.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

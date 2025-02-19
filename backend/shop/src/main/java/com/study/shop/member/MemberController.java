@@ -1,7 +1,5 @@
-package com.study.shop.controller;
+package com.study.shop.member;
 
-import com.study.shop.entity.Member;
-import com.study.shop.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

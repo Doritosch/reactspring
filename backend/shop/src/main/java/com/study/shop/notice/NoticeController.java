@@ -1,7 +1,5 @@
-package com.study.shop.controller;
+package com.study.shop.notice;
 
-import com.study.shop.entity.Notice;
-import com.study.shop.repository.NoticeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
