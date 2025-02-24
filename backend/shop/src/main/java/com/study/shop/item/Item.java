@@ -11,6 +11,7 @@ public class Item {
     private Long id;
     private String title;
     private Integer price;
+    private String username;
 
     public Long getId() {
         return id;
@@ -24,6 +25,10 @@ public class Item {
         return price;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -32,12 +37,7 @@ public class Item {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "Item{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", price=" + price +
-                '}';
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

@@ -8,6 +8,7 @@ function App() {
   let [좋아요, like] = useState([0,0,0]);
   let [modal, setModal] = useState(false);
   let [titleIdx, changeIdx] = useState(0);
+  let [input, changeInput] = useState('');
 
   return (
     <div className="App">
@@ -50,12 +51,23 @@ function App() {
                 let copy = [...좋아요];
                 copy[i] = copy[i]+1;
                 like(copy)
-              }}>👍</span>{좋아요[i]}</h4>
+              }}>👍</span>{좋아요[i]} <button onClick={(e)=>{e.stopPropagation();
+                let copy = [...글제목];
+                copy.splice(i, 1);
+                title(copy);
+              }}>글삭제</button></h4>
               <p>2월4일</p>
             </div>
           )
         })
       }
+      <input onChange={(e)=>{
+        changeInput(e.target.value);
+      }}></input> <button onClick={(e)=> {
+        let copy = [...글제목];
+        copy.push(input); // unshift() <-- 배열 앞에 추가
+        title(copy);
+      }}>입력</button>
       {
         modal==true?<Modal titleIdx={titleIdx} title={title} 글제목={글제목}/>: null
       }

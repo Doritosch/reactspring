@@ -12,7 +12,7 @@ public class MemberService {
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
-    public void save(String username, String password, String displayName) {
+    public void signup(String username, String password, String displayName) {
         if(!memberRepository.existsById(username)) {
             Member member = new Member();
             member.setUsername(username);
@@ -25,4 +25,5 @@ public class MemberService {
             new IllegalArgumentException("이미 id가 있어요");
         }
     }
+
 }

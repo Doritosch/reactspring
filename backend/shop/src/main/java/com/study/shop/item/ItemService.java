@@ -28,10 +28,11 @@ public class ItemService {
 
         return result;
     }
-    public void saveItem(String title, Integer price) {
+    public void saveItem(String title, Integer price, String username) {
         Item item = new Item();
         item.setTitle(title);
         item.setPrice(price);
+        item.setUsername(username);
         itemRepository.save(item);
     }
     public void patchItem(Long id, String title, Integer price) {
